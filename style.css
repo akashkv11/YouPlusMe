@@ -1,0 +1,11 @@
+body {
+  font-family: "Inconsolata", monospace;
+  font-weight: 200;
+  font-size: larger;
+}
+
+.base-div {
+  height: 50dvh;
+  margin-top: 25dvh;
+  display: flex;
+}
