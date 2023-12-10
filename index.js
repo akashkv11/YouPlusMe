@@ -5,15 +5,13 @@ const heading = document.getElementById("heading");
 const handleSubmit = (event) => {
   event.preventDefault();
 
-  const result = calculatePercentage();
-  heading.innerHTML = `Your result is ${result}%`;
+  //   const result = calculatePercentage();
+  heading.innerHTML = `Your result is ${calculatePercentage()}%`;
 };
 
 const calculatePercentage = () => {
-  const percentage = Math.floor(Math.random() * 100 + 1);
+  const result = Math.floor(Math.random() * 100 + 1);
+  const percentage = result > 50 ? result : calculatePercentage();
   console.log(percentage);
-  if (percentage < 50) calculatePercentage();
-  else {
-    return percentage;
-  }
+  return percentage;
 };
