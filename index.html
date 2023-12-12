@@ -28,22 +28,30 @@
   <body>
     <div class="base-div d-flex flex-column align-items-center">
       <h2 id="heading">Enter your input</h2>
-      <div class="inner-div">
+      <div class="inner-div form-container">
         <form onsubmit="handleSubmit(event)">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="input1" required />
+            <input
+              type="text"
+              class="form-control input"
+              id="input1"
+              required
+            />
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label"
               >Your partner name</label
             >
-            <input type="text" class="form-control" id="input2" required />
+            <input
+              type="text"
+              class="form-control input"
+              id="input2"
+              required
+            />
           </div>
           <div class="d-flex justify-content-center mt-5">
-            <button type="submit" class="btn btn-outline-info">
-              Calculate
-            </button>
+            <button type="submit" class="shadow__btn">Calculate</button>
           </div>
         </form>
       </div>
