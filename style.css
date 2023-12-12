@@ -8,4 +8,14 @@ body {
   height: 50dvh;
   margin-top: 25dvh;
   display: flex;
+  justify-content: center;
+}
+
+.inner-div {
+  /* background-color: red;  */
+  width: 500px;
+}
+
+#heading {
+  margin-bottom: 40px;
 }

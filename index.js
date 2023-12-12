@@ -3,6 +3,7 @@ const input2 = document.getElementById("input2");
 const heading = document.getElementById("heading");
 
 const handleSubmit = (event) => {
+  console.log("handle triggered");
   event.preventDefault();
 
   //   const result = calculatePercentage();
